@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists</title>
+</head>
+
+<body>
+
+    <!-- 
+        LISTS
+            1. Ordered List -
+                where ordering is necessary
+                eg: process, direction, ... etc
+                syntax: 
+                    <ol>
+                        <li>List item</li>
+                    </ol>
+                type:
+                    1 2 3 ... (default)
+                    i ii iii
+                    I II III
+                    a b c
+                    A B C
+                start:
+                    number
+            2. Unordered List
+                where ordering is not required
+                eg: shopping list
+
+                syntax:
+                <ul>
+                    <li>list item</li>
+                </ul>
+                type: 
+                    default(disc)
+                    square
+                    circle
+     -->
+    <ol type="a" start="3">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li> Sub Category
+            <ol>
+                <li>item a</li>
+                <li>item b</li>
+                <li>item c</li>
+            </ol>
+        </li>
+        <li>item 4</li>
+        <li>item 5</li>
+    </ol>
+
+    <ul style="list-style: '→ ';">
+        <li>list item A</li>
+        <li>list item B
+            <ul>
+                <li>item a</li>
+                <li>item b
+                    <ul>
+                        <li>item a</li>
+                        <li>item b
+                            <ul type="disc">
+                                <li>item a</li>
+                                <li>item b</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>list item C</li>
+    </ul>
+
+    <ol type="A">
+        <li>Shopping List
+            <ol>
+                <li>Vegetables
+                    <ul type="circle">
+                        <li>Potato</li>
+                        <li>Tomato</li>
+                        <li>Carrot </li>
+                        <li>Radish
+                            <ul type="disc">
+                                <li>Red </li>
+                                <li>White</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>Fruits</li>
+            </ol>
+        </li>
+    </ol>
+
+</body>
+
+</html>
