@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <form>
+        <!-- methods:  
+        get(default):
+            to get information/data from server
+            eg: search
+            data is passed using url
+            not secure
+            size: limited(2048 characters)
+        post:
+            to send data/information to server
+            eg: register, login
+            data is passed using body of a form
+            secure
+            size: unlimited
+-->
+        <fieldset disabled>
+            <legend>General</legend>
+            <label for="fname">First Name: </label>
+            <input type="text" id="fname" name="first_name" placeholder="Enter your firstname" size="50" value="Ram"
+                maxlength="20">
+
+            <br>
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname">
+            <br>
+
+        </fieldset>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="date_of_birth" value="2022-09-02">
+        <input type="datetime-local" id="dob" name="date_of_birth" value="2022-09-02">
+        <input type="time" id="dob" name="date_of_birth" value="22:30">
+
+        <br>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="email here" size="50">
+
+        <br>
+        <label for="pwd">Password:</label>
+        <input type="password" id="pwd" maxlength="30" minlength="8">
+
+        <br>
+        <label for="age">Age</label>
+        <input type="number" id="age" max="1000" min="10">
+
+        <br>
+        <label>Hobbies</label>
+        <input type="checkbox" id="read" name="hobby" value="rr"><label for="read">READING NOVELS</label>
+        <input type="checkbox" id="travel" name="hobby" value="tt"><label for="travel">Travelling</label>
+        <input type="checkbox" id="games" name="hobby" value="gg"><label for="games">Sports</label>
+
+        <br>
+        <label>Gender</label>
+        <input type="radio" value="male" id="male" name="gender"><label for="male">Male</label>
+        <input type="radio" value="female" id="female" name="gender"><label for="female">Female</label>
+        <input type="radio" value="other" id="other" name="gender"><label for="other">Other</label>
+
+        <br>
+        <label for="address">Address</label>
+        <select name="address" id="address">
+            <option value="ktm">Kathmandu</option>
+            <option value="pkr">Pokhara</option>
+            <option value="bkt">Bhaktapur</option>
+            <option value="lal">Lalitpur</option>
+        </select>
+
+        <br>
+        <label for="desc">Description</label>
+        <textarea name="description" id="desc" cols="30" rows="5" style="resize: none;"></textarea>
+        <br>
+        <input type="search">
+        <input type="color">
+        <input type="range">
+        <input type="file">
+        <br>
+
+
+        <button>Register</button>
+        <input type="submit" value="ok">
+
+        <input type="reset" value="clear">
+    </form>
+
+</body>
+
+</html>
