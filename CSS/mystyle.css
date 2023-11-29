@@ -1,0 +1,10 @@
+h1,li{
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    text-transform: capitalize;
+    text-align: justify;
+    text-decoration: underline;
+    text-decoration-color: blue;
+}

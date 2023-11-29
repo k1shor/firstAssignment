@@ -1,0 +1,93 @@
+<!-- 
+    CSS : Cascading Style Sheets
+
+    version: CSS 3.0
+        - Box model
+        - backgrounds
+        - selectors
+        - shadow
+        - animation / transformation
+        - layout
+        - media query
+
+    css structure
+        selector: {
+            attribute1: value;
+            attribute2: value;
+        }
+
+        selector: html element on which css is applied
+        attribute: property of html element to be changed
+        value: value of the attribute/property to be set
+
+        selector types:
+            1. element selector : use same name as html elements, eg: h1, .. h6, p, span, ..... etc
+            2. class selector: user defined class names,
+                use dot preceeding the classnames while applying css
+                multiple classes can be used in same element
+            3. id selector: user defined IDs,
+                use hash (#) preceeding the id while applying css
+            4. attribute selector: 
+                user-defined/html elements attribute
+                attribute are written inside []
+                also values of the attribute can be used when defining css
+            5. combinators
+                grouping
+                descendent
+                child
+                siblings - general, adjancent
+            6. pseudo class, pseudo elements
+
+
+            priority: id-selector > class-selector > element-selector
+                
+
+CSS types: 3 types
+        1. Internal CSS
+            written inside same html page in the head section inside <style> tag.
+                best to use in single page website
+        2. External CSS
+                written in separate css file, 
+                import external css file in head section using link tag.
+                style tag is not necessary
+                best for multiple pages website
+        3. Inline CSS
+                used to apply css to particular element only
+                uses style attribute in html element
+
+                priority: inline > (internal = external, whichever comes at the end has high)
+
+
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="stylesheet" href="mystyle.css">
+
+</head>
+
+<body>
+    <h1 class="myalign mycolor mybackground" id="heading1" head="h1" style="background-color: gray;color: yellow;">
+        HEADING
+    </h1>
+    <h1 class="mycolor mybackground" id="" head="h2">Heading 2</h1>
+
+    <li class="mycolor mybackground">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi fugiat fuga praesentium tempore voluptas
+        repudiandae eveniet quam aperiam, veniam nulla labore culpa aspernatur? Modi, fugit!
+    </li>
+
+    <input type="text">
+    <input type="email">
+
+</body>
+
+</html>
