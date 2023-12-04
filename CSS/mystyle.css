@@ -8,3 +8,19 @@ h1,li{
     text-decoration: underline;
     text-decoration-color: blue;
 }
+
+/* box model - 
+    margin, padding, border
+
+    shadow
+    backgrounds
+    positions
+    flex
+    grid
+    combinators
+    pseudoclass pseudoelements
+    transformation
+    animation
+    form
+    mediaquery
+*/

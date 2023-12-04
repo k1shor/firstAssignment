@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Units and Backgrounds</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        body{
+            background-image: url('./bg9.png');
+        }
+
+        div {
+            height: 100vh;
+            width: 100vw;
+            /* background-color: blue; */
+            padding: 10vh;
+            /* margin-left: 20px; */
+
+            /* font-size: 0.5em; */
+            /* 
+            absolute units
+            px - pixel
+            pt - point
+            cm, in, mm, ....
+
+            relative units
+            %
+            vh - viewport height
+            vw - viewport width
+
+            em - relative to parent
+            rem - relative to root
+
+            fr - fractional unit
+            */
+        }
+        .demo{
+
+            /* background-color: rgb(0,0,255); */
+            /* background-color: rgb(0,255,0); */
+            /* background-color: rgb(255,0,0); */
+            /* background-color: rgb(255,255,0); */
+            /* background-color: rgb(255,0,255); */
+            /* background-color: rgb(0,255,255); */
+            /* background-color: rgb(255,255,255); */
+            /* background-color: rgb(0,0,0); */
+            /* color: rgb(100, 50, 10); */
+
+            /* background-color: hsl(90,100%, 50%); */
+
+            /* background-color: #0000ff55; */
+            /* background-color: rgba(255,0,0,50%); */
+            /* background-color: hsla(90,100%,50%,50%); */
+            /* 
+            color - 
+                color names, 
+                hex - 0-9,a,b,c,d,e,f
+                    #rrggbb
+                    #000000 - #ffffff, 
+                rgb - red green blue
+                        0 - 255
+                hsl - hue saturation lightness
+                    h - color ( 0 - 360)
+                    s - presence of color( 0 - 100%)
+                    l - presence of light(0 -100%)
+
+                hex(8bit) - last 2 bit represent transparency
+            */
+
+            /* background-image: repeating-linear-gradient(-75deg,red 10%, rgba(255,0,0,0%) 50%, orange 55%, yellow 60%, green, blue 75%); */
+
+            /* background-image: repeating-radial-gradient(red, yellow 20%, green, blue 50%) ; */
+
+            height: 300px;
+            width: 300px;
+
+            background-image: url('./mule.png');
+/* background-image: url('https://www.simplilearn.com/ice9/free_resources_article_thumb/What_is_the_Importance_of_Technology.jpg'); */
+            /* background-size: 50% 50%; */
+            background-position: top left;
+            background-repeat: no-repeat;
+            /* background-attachment: fixed; */
+            /* filter:drop-shadow(50px 50px 5px gray); */
+            background-color: green;
+
+            margin: auto;
+            margin-top: 50px;
+            color: red;
+/* horizontal distance, verticalDistance blur spread color */
+            /* box-shadow: inset -50px 0px 15px  yellow, inset 50px 0px 15px  red ,
+            50px 50px 10px purple, -30px -30px blue, -50px -50px rebeccapurple,
+            50px -50px 10px 5px green; */
+
+            box-shadow: 0 0 10px 10px gray;
+
+            font-size: 128px;
+            /* hor-distance ver-distance blur color */
+            text-shadow: -10px -10px 10px yellow;
+
+            /* filter: sepia(50%); */
+            /* filter: grayscale(100%); */
+            /* filter: contrast(100%); */
+            /* filter: brightness(50%); */
+            /* filter: invert(100%); */
+            /* filter: saturate(100%); */
+            filter: opacity(70%);
+            /* filter: drop-shadow(-50px -50px gray); */
+            filter: hue-rotate(360deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="demo">Hello</div>
+    <!-- <div class="demo">HELLO WORLD - 16px * 2
+        <div>HELLO WORLD - 16px * 2 * 2
+            <div>HELLO WORLD - 16px * 2 * 2 * 2
+
+            </div>
+        </div>
+    </div> -->
+
+
+</body>
+
+</html>
+

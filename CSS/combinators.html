@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinators</title>
+    <style>
+        /* combinators:
+        1. Grouping selectors: to apply same css to multiple elements, classes or ids
+            to group multiple selectors, we use comma (,) 
+
+        2. Descendant selector: 
+            to apply css to every child/descendant elements,
+            we use space ( )
+            eg: Parentselector childselector{
+                css lines
+            }
+        3. Child selector:
+            immediate descendant -> child
+            to apply css to child elements, we use greater than(>) symbol
+        4. siblings:
+            following selectors,
+            we use tilde(~) symbol to apply css to the sibling elements
+        5. adjacent sibling:
+            immediately following sibling
+            we use plus(+) symbol to apply css to the adjacent sibling
+
+        Universal Selector: (*)
+
+         */
+
+        * {
+            background-image: linear-gradient(red, yellow);
+        }
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 16px;
+
+        }
+
+        div,
+        p,
+        li,
+        .myclass,
+        #mybutton {
+            color: blue;
+            font-size: 32px;
+        }
+
+        .main p {
+            background-color: yellow;
+        }
+
+        .main>p {
+            text-align: right;
+        }
+
+        div~p {
+            text-decoration: underline;
+        }
+
+        div+p {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>HELLO WORLD</div>
+    <p>Sibling 1</p>
+    <li>List item</li>
+    <span class="myclass">Lorem ipsum dolor sit amet.</span>
+    <p>
+        Sibling 2
+    </p>
+    <button id="mybutton">Click me</button>
+
+    <div class="main">
+        <p>Descendant 1</p>
+        <div>
+            <p>Descendant 2</p>
+            <div>
+                <p>Descendant 3</p>
+            </div>
+        </div>
+    </div>
+    <span>Lorem ipsum dolor sit amet.</span>
+</body>
+
+</html>
