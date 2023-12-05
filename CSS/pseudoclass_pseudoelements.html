@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclass and pseudoelements</title>
+
+    <style>
+        *{
+            scroll-behavior: smooth;
+        }
+        a:link{
+            color: aqua;
+        }
+        a:visited{
+            color: brown;
+        }
+        a:hover{
+            color: green;
+            font-weight: bold;
+        }
+        a:active{
+            color: red;
+        }
+
+        input:hover{
+            background-color: blueviolet;
+        }
+
+        input:focus{
+            background-color: aquamarine;
+        }
+
+        input:active{
+            background-color: gray;
+        }
+
+        li:first-child{
+            color: brown;
+        }
+        li:last-child{
+            color: gray;
+        }
+        li:nth-child(2){
+            color: purple;
+        }
+        li:nth-child(even){
+            font-size: 20px;
+        }
+        li:nth-child(odd){
+            text-decoration: underline;
+        }
+
+        p::first-line{
+            font-weight: bold;
+        }
+        p::first-letter{
+            font-size: 32px;
+        }
+        .intro::before{
+            content: "HELLO";
+            display: block;
+            background-color: yellow;
+        }
+        p::after{
+            content: "";
+            height: 10px;
+            width: 100%;
+            display: block;
+            background-color: purple;
+        }
+
+        p::selection{
+            background-color: aqua;
+        }
+
+        li::marker{
+            color: green;
+            /* font-size: 32px; */
+        }
+
+        table{
+            border: 5px solid gray;
+            border-collapse: collapse;
+        }
+        td{
+            border: 2px solid green;
+            height: 50px;
+            width: 50px;
+        }
+        tr:nth-child(odd) td:nth-child(odd){
+            background-color: green;
+        }
+        tr:nth-child(even) td:nth-child(even){
+            background-color: green;
+        }
+
+    </style>
+</head>
+<body>   
+    <a href="boxModel.html">Box model</a>
+    <a href="./combinators.html">Combinators</a>
+    <input type="text">
+    <input type="radio">
+    <input type="checkbox">
+    <ul>
+    <li>list item</li>
+    <li>list item</li>
+    <li>list item</li>
+    <li>list item</li>
+    <li>list item</li>
+    <li>list item</li>
+    <li>list item</li>
+    <li>list item</li>
+    <li>list item</li>
+</ul>
+<p class="intro">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam voluptatibus mollitia corrupti consectetur, dolore iusto, ratione odio provident eveniet voluptate, veritatis exercitationem deserunt tenetur repudiandae?
+</p>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit debitis numquam molestias veniam voluptatibus corrupti natus, atque dolorem vel aliquam facilis iusto, magnam minima eos rem. Beatae quisquam minus, obcaecati est nihil illum atque amet ut perspiciatis reiciendis adipisci accusamus, unde odit dolorem ad enim accusantium? Quae expedita, minus error sunt maxime delectus dolores eum?</p>
+
+
+<table>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+<a href="#">Click me</a>
+</body>
+</html>
