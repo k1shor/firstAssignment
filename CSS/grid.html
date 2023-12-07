@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .demo{
+            background-color: blue;
+            display: grid;
+            /* grid-template-columns: 30% 40% auto 20%; */
+            /* fr - fractional unit */
+            grid-template-columns: 25% auto auto;
+            /* grid-template-rows: 10vh 40vh 40vh 10vh; */
+
+            /* grid-template-rows: 300px 300px 300px; */
+            /* grid-gap: 20px; */
+        }
+        .item{
+            height: 200px;
+            /* width: 200px; */
+            margin: 5px;
+            background-color: aquamarine;
+        }
+
+        .header{
+            background-color: aquamarine;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            list-style: none;
+            /* display: grid;
+            grid-template-columns: repeat(5, auto); */
+            text-align: center;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .header li{
+            padding: 10px 0;
+        }
+        .header li:hover{
+            background-color: blue;
+            color: white;
+            cursor: pointer;
+        }
+
+        .leftsidebar{
+            background-color: purple;
+            grid-row-start: 2;
+            grid-row-end:4;
+            height: 80vh;
+        }
+
+        .top{
+            background-color: brown;
+            grid-column: 2/4 ;
+            grid-row: 2;
+        }
+        footer{
+            /* grid-row: 4; */
+            grid-column: 1/4;
+            padding: 10px 0;
+            text-align: center;
+            background-color: aquamarine;
+        }
+        .bottom-left{
+            grid-row: 3;
+            grid-column:2;
+            background-color: gray;
+        }
+        .bottom-right{
+            grid-row: 3;
+            grid-column: 3;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="demo">
+        <nav class="header">
+            <li>HOME</li>
+            <li>ABOUT</li>
+            <li>GALLERY</li>
+            <li>BLOGS</li>
+            <li>CONTACT</li>
+        </nav>
+        <footer>This is a footer</footer>
+
+        
+        <div class="top">Main content top</div>
+        
+        <div class="bottom-left">Bottom Left</div>
+        <div class="bottom-right">Bottom right</div>
+        <div class="bottom-right1">Bottom right</div>
+        <div class="bottom-right2">Bottom right</div>
+        <div class="bottom-right3">Bottom right</div>
+        <div class="bottom-right3">Bottom right</div>
+        <div class="bottom-right3">Bottom right</div>
+        <div class="leftsidebar">Leftsidebar</div>
+        
+    </div>
+    
+</body>
+</html>

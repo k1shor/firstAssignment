@@ -15,10 +15,10 @@ h1,li{
     shadow
     backgrounds
     positions
-    flex
-    grid
     combinators
     pseudoclass pseudoelements
+    flex - flexible box
+    grid
     transformation
     animation
     form

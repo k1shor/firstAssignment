@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Layout</title>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        header{
+            background-color: aquamarine;
+            padding: 10px 0;
+        }
+        nav{
+            display: flex;
+            justify-content: space-evenly;
+            list-style: none;
+            text-transform: uppercase;
+        }
+        a{
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        a:hover{
+            font-size: 32px;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        main{
+            display: flex;
+            height: 90vh;
+            background-color: gray;
+        }
+        aside{
+            width: 25%;
+            background-color: yellow;
+        }
+        section{
+            height: 100%;
+            width: 75%;
+            /* background-color: green; */
+        }
+        article{
+            height: 50%;
+            width: 100%;
+            background-color: goldenrod;
+        }
+        .bottom{
+            display: flex;
+            height: 50%;
+        }
+        figure{
+            width: 50%;
+            height: 100%;
+        }
+        figure:first-child{
+            background-color: green;
+        }
+        footer{
+            text-align: center;
+            padding: 5px 0;
+            background-color: aquamarine;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <li><a href="#">Home </a></li>
+            <li><a href="#">About </a></li>
+            <li><a href="#">Gallery </a></li>
+            <li><a href="#">Blogs </a></li>
+            <li><a href="#">Contact </a></li>
+        </nav>
+    </header>
+
+    <main>
+        <aside>Left Side bar</aside>
+        <section>
+            <article>main top</article>
+            <div class="bottom">
+                <figure>Bottom Left</figure>
+                <figure>Bottom Right</figure>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        This is footer
+    </footer>
+    
+</body>
+</html>
