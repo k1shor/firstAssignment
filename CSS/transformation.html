@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+    Transformation    
+    </title>
+    <!-- transformation: change in location, orientation, size, shape -->
+    <!-- translate:change in location -->
+    <!-- transform: translate(x-value, y-value) 
+      transform: translateX(value) 
+      transform: translateY(value) 
+
+      rotate - change in orientation
+        transform: rotate(90deg)
+        transform: rotateX(90deg)
+        transform: rotateY(90deg)
+        transform: rotateZ(90deg)
+
+        scale - change in size
+        1 - default
+        >1 - enlarge
+        <1 - diminish
+        transform: scale(1)
+
+        skew - change in shape
+        skewX(60deg)
+    -->
+    <style>
+        body{
+            perspective: 300px;
+
+        }
+        .demo{
+            margin: auto;
+            height: 300px;
+            width: 300px;
+            background-color: blue;
+        }
+        .demo:hover{
+            /* transform: translate(50px, 50px); */
+            /* transform: translateX(50px); */
+            /* transform: translateX(-50px); */
+            /* transform: translateY(-50px) translateX(50px); */
+
+            /* transform: rotate(-90deg); */
+            /* transform: rotateX(180deg); */
+            /* transform: rotatey(180deg); */
+            /* transform: scale(-1.25); */
+            /* transform: scaleX(1.25); */
+            /* transform: scaleY(1.25); */
+            /* transform: rotate(360deg) translate(100px, 100px) scale(0.8) skewX(60deg); */
+
+            /* transform: skewX(60deg); */
+            /* transform: skewY(60deg); */
+            transform: skew(60deg,60deg);
+            transition: 2s;
+
+        }
+        .demo2{
+            height: 300px;
+            width: 300px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="demo">HELLO WORLD</div>
+    <div class="demo2"></div>
+    
+</body>
+</html>

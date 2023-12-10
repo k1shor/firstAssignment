@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .demo{
+            height: 300px;
+            width: 300px;
+            background-color: blue;
+
+            animation-name: anim2;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            /* animation-direction: alternate; */
+            animation-fill-mode: forwards;
+            animation-timing-function: linear;
+            /* animation-delay: 2s; */
+        }
+
+        .demo:hover{
+            animation-play-state: paused;
+
+        }
+        @keyframes anim1 {
+            from{
+                background-color: red;
+
+            }
+            to{
+                background-color: green;
+                transform: translateX(100px);
+            }
+        }
+
+        @keyframes anim2 {
+            0%{
+            }
+            25%{
+                transform: translate(100px,0);
+                background-color: red;
+            }
+            50%{
+                transform: translate(100px,100px);
+                border-radius: 50%;
+                background-color: orange;
+
+            }
+            75%{
+                transform: translate(0, 100px);
+                background-color: yellow;
+            }
+            100%{
+                transform: translate(0,0);
+            }
+        }
+        @keyframes spin {
+            from{
+                /* transform: rotateY(75deg); */
+                border-color: red;
+            }
+            to{
+                transform: rotatex(60deg) rotatey(60deg) rotateZ(360deg);
+                border-color: blue;
+            }
+        }
+        @keyframes spin2 {
+            from{
+                /* transform: rotateY(75deg); */
+                border-color: pink;
+            }
+            to{
+                transform: rotatex(120deg) rotatey(120deg) rotateZ(-360deg);
+                border-color: purple;
+            }
+        }
+
+        .spinner, .spinner2{
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            border-top: 10px solid red;
+            border-right: 10px solid red;
+            /* animation: spin 3s ease 0 infinite  normal forwards; */
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            position: absolute;
+        }
+        .spinner{
+            animation-name: spin;
+
+            transform: rotatex(60deg) rotatey(60deg);
+
+        }
+.spinner2{
+    animation-name: spin2;
+
+    transform: rotatex(120deg) rotatey(120deg);
+
+}
+
+    </style>
+</head>
+<body>
+    <!-- <div class="demo"></div> -->
+    <div class="spinner"></div>
+    <div class="spinner2"></div>
+</body>
+</html>
