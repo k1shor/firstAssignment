@@ -24,7 +24,7 @@
             transition: all 0.3s ease;
         }
         a:hover{
-            font-size: 32px;
+            /* font-size: 32px; */
             text-decoration: underline;
             font-weight: bold;
         }
@@ -64,6 +64,69 @@
             background-color: aquamarine;
         }
 
+        @media screen and (max-width:600px) {
+            main{
+                display: block;
+                height: auto;
+            }
+            aside{
+                width: 100%;
+                height: 30vh;
+            }
+            section{
+                width: 100%;
+                /* height: 30vh; */
+            }
+            article{
+                height: 30vh;
+            }
+            .bottom{
+                /* height: 30vh; */
+                flex-direction: column;
+            }
+            figure{
+                height: 30vh;
+                width: 100%;
+            }
+            nav{
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+        nav li{
+            position: relative;
+        }
+
+        nav li>ul{
+            display: none;
+            /* visibility: hidden; */
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: blueviolet;
+            list-style: none;
+            padding: 0;
+        }
+        nav li>ul li{
+            padding: 5px 15px;
+        }
+
+        nav li>ul li:hover{
+            background-color: aquamarine;
+            color: purple;
+        }
+        nav li>ul a{
+            color: yellow;
+        }
+        nav li:hover>ul{
+            display: block;
+        }
+        nav li ul li ul{
+            display: none;
+            top: -100%;
+            left: 100%;
+        }
+
     </style>
 </head>
 <body>
@@ -71,6 +134,33 @@
         <nav>
             <li><a href="#">Home </a></li>
             <li><a href="#">About </a></li>
+            <li>
+                <a href="#">Category </a>
+                <ul>
+                    <li>
+                        <a href="#">Mobiles</a>
+                        <ul>
+                            <li><a href="#">Samsung</a></li>
+                            <li><a href="#">Apple</a></li>
+                            <li><a href="#">Huwawei</a></li>
+                            <li><a href="#">Redmi</a></li>
+                            <li><a href="#">Oneplus</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Laptops</a>
+                        <ul>
+                            <li><a href="#">Samsung</a></li>
+                            <li><a href="#">Apple</a></li>
+                            <li><a href="#">Acer</a></li>
+                            <li><a href="#">Lenovo</a></li>
+                            <li><a href="#">Asus</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Fitness</a></li>
+                    <li><a href="#">Kitchen</a></li>
+                </ul>
+            </li>
             <li><a href="#">Gallery </a></li>
             <li><a href="#">Blogs </a></li>
             <li><a href="#">Contact </a></li>

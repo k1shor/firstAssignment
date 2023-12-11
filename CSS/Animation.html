@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animation</title>
     <style>
-        .demo{
+        body{
+            height: 100vh;
+            /* perspective-origin: 500px; */
+            /* perspective: 500px; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .demo {
             height: 300px;
             width: 300px;
             background-color: blue;
@@ -19,93 +28,174 @@
             /* animation-delay: 2s; */
         }
 
-        .demo:hover{
+        .demo:hover {
             animation-play-state: paused;
 
         }
+
         @keyframes anim1 {
-            from{
+            from {
                 background-color: red;
 
             }
-            to{
+
+            to {
                 background-color: green;
                 transform: translateX(100px);
             }
         }
 
         @keyframes anim2 {
-            0%{
-            }
-            25%{
-                transform: translate(100px,0);
+            0% {}
+
+            25% {
+                transform: translate(100px, 0);
                 background-color: red;
             }
-            50%{
-                transform: translate(100px,100px);
+
+            50% {
+                transform: translate(100px, 100px);
                 border-radius: 50%;
                 background-color: orange;
 
             }
-            75%{
+
+            75% {
                 transform: translate(0, 100px);
                 background-color: yellow;
             }
-            100%{
-                transform: translate(0,0);
+
+            100% {
+                transform: translate(0, 0);
             }
         }
+
         @keyframes spin {
-            from{
+            from {
                 /* transform: rotateY(75deg); */
                 border-color: red;
             }
-            to{
+
+            to {
                 transform: rotatex(60deg) rotatey(60deg) rotateZ(360deg);
                 border-color: blue;
             }
         }
+
         @keyframes spin2 {
-            from{
+            from {
                 /* transform: rotateY(75deg); */
                 border-color: pink;
             }
-            to{
+
+            to {
                 transform: rotatex(120deg) rotatey(120deg) rotateZ(-360deg);
                 border-color: purple;
             }
         }
+        @keyframes spin3 {
+            from {
+                /* transform: rotateY(75deg); */
+                border-color: pink;
+            }
 
-        .spinner, .spinner2{
+            to {
+                transform: rotateX(360deg);
+                border-color: purple;
+            }
+        }
+        @keyframes spin4 {
+            from {
+                /* transform: rotateY(75deg); */
+                border-color: pink;
+            }
+
+            to {
+                transform: rotateY(360deg);
+                border-color: purple;
+            }
+        }
+        @keyframes spin5 {
+            from {
+                /* transform: rotateY(75deg); */
+                border-color: purple;
+            }
+
+            to {
+                transform: rotateX(75deg) rotateZ(360deg);
+                border-color: peru;
+            }
+        }
+
+        .spinner,
+        .spinner2,
+        .spinner3,
+        .spinner4,
+        .spinner5 {
             height: 200px;
             width: 200px;
             border-radius: 50%;
             border-top: 10px solid red;
             border-right: 10px solid red;
             /* animation: spin 3s ease 0 infinite  normal forwards; */
-            animation-duration: 1s;
+            animation-duration: 2s;
             animation-iteration-count: infinite;
             animation-timing-function: linear;
             position: absolute;
+            animation-direction: forwards;
         }
-        .spinner{
+
+        .spinner {
             animation-name: spin;
+            animation-duration: 0.5s;
 
             transform: rotatex(60deg) rotatey(60deg);
 
         }
-.spinner2{
-    animation-name: spin2;
 
-    transform: rotatex(120deg) rotatey(120deg);
+        .spinner2 {
+            animation-name: spin2;
 
-}
+            transform: rotatex(120deg) rotatey(120deg);
+            animation-duration: 0.3s;
 
+        }
+
+        .spinner3 {
+            animation-name: spin3;
+            border: 3px solid green;
+            animation-duration: 0.4s;
+
+            /* transform: rotatey(120deg); */
+
+        }
+        .spinner4 {
+            animation-name: spin4;
+            border: 3px solid green;
+            animation-duration: 0.4s;
+
+            /* transform: rotatey(120deg); */
+
+        }
+        
+        .spinner5 {
+            animation-name: spin5;
+            border-top: 3px solid green;
+            animation-duration: 0.2s;
+
+            transform: rotateX(75deg);
+
+        }
     </style>
 </head>
+
 <body>
     <!-- <div class="demo"></div> -->
     <div class="spinner"></div>
     <div class="spinner2"></div>
+    <!-- <div class="spinner3"></div>
+    <div class="spinner4"></div> -->
+    <div class="spinner5"></div>
 </body>
+
 </html>

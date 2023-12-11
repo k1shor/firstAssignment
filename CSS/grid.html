@@ -28,12 +28,12 @@
             grid-column-start: 1;
             grid-column-end: 4;
             list-style: none;
-            /* display: grid;
-            grid-template-columns: repeat(5, auto); */
+            display: grid;
+            grid-template-columns: repeat(5, auto);
             text-align: center;
-            display: flex;
+            /* display: flex;
             justify-content: space-evenly
-            ;
+            ; */
         }
         .header li{
             padding: 10px 0;
@@ -73,6 +73,37 @@
             grid-column: 3;
         }
 
+        @media screen and (max-width:600px) {
+            .demo{
+                grid-template-columns: 100%;
+            }
+            .leftsidebar{
+                grid-row:2/3;
+                height: 20vh;
+            }
+            .top{
+                grid-row: 3/4;
+                grid-column: 1/2;
+                height: 20vh;
+
+            }
+            .bottom-left{
+                grid-row: 4/5;
+                grid-column: 1/2;
+                height: 20vh;
+
+            }
+            .bottom-right{
+                grid-row: 5/6;
+                grid-column: 1/2;
+                height: 20vh;
+
+            }
+            .header{
+                display: block;
+            }
+        }
+
 
     </style>
 </head>
@@ -92,11 +123,11 @@
         
         <div class="bottom-left">Bottom Left</div>
         <div class="bottom-right">Bottom right</div>
-        <div class="bottom-right1">Bottom right</div>
+        <!-- <div class="bottom-right1">Bottom right</div>
         <div class="bottom-right2">Bottom right</div>
         <div class="bottom-right3">Bottom right</div>
         <div class="bottom-right3">Bottom right</div>
-        <div class="bottom-right3">Bottom right</div>
+        <div class="bottom-right3">Bottom right</div> -->
         <div class="leftsidebar">Leftsidebar</div>
         
     </div>
